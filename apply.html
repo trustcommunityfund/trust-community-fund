@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply | TRUST COMMUNITY FUND</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">✦</span><span><strong>TRUST</strong><small>COMMUNITY FUND</small></span></a>
+    <nav><a href="index.html">Home</a><a href="index.html#grants">Grants</a><a href="index.html#faq">FAQ</a></nav>
+  </header>
+
+  <main>
+    <section class="apply-hero">
+      <p class="eyebrow">GRANT APPLICATION</p>
+      <h1>Apply for a Grant</h1>
+      <p>Complete the form below. Use accurate information and only submit information you are comfortable sharing.</p>
+    </section>
+
+    <section class="form-wrap">
+      <form id="grantForm">
+        <h2>Applicant Information</h2>
+        <div class="form-grid">
+          <label>Full name<input required name="name" autocomplete="name"></label>
+          <label>Email address<input required type="email" name="email" autocomplete="email"></label>
+          <label>Phone number<input type="tel" name="phone" autocomplete="tel"></label>
+          <label>Country / Region<input required name="location"></label>
+        </div>
+
+        <h2>Grant Request</h2>
+        <div class="form-grid">
+          <label>Grant category
+            <select required name="category">
+              <option value="">Select one</option>
+              <option>Community Development</option>
+              <option>Education & Youth</option>
+              <option>Environment & Sustainability</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Amount requested (optional)<input type="number" min="0" name="amount" placeholder="e.g. 1000"></label>
+        </div>
+        <label>What would the funding be used for?<textarea required name="purpose" rows="6"></textarea></label>
+        <label>Tell us about your project or need<textarea required name="details" rows="7"></textarea></label>
+
+        <div class="notice">
+          <b>Before submitting:</b> This demo form does not send money or guarantee a grant. Connect it to a secure, legitimate form-processing service before collecting real applications.
+        </div>
+        <label class="consent"><input required type="checkbox" name="confirm"> I confirm that the information I provided is accurate to the best of my knowledge.</label>
+        <button class="btn primary" type="submit">Submit Application</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+  <footer><strong>TRUST COMMUNITY FUND</strong><p>© 2026 TRUST COMMUNITY FUND.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
